@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Royal Enfield Hunter 350</title>
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Segoe UI',sans-serif;
+background:#0f0f0f;
+color:white;
+}
+
+/* NAVBAR */
+nav{
+position:sticky;
+top:0;
+background:#111;
+display:flex;
+justify-content:center;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,0.5);
+}
+
+nav a{
+color:white;
+padding:15px 20px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+background:orange;
+color:black;
+border-radius:5px;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),
+url("https://imgd.aeplcdn.com/664x374/n/cw/ec/124233/hunter-350-right-front-three-quarter.jpeg");
+background-size:cover;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+animation:fadeIn 2s;
+}
+
+.hero h1{
+font-size:70px;
+color:orange;
+}
+
+.hero p{
+font-size:24px;
+margin-top:10px;
+opacity:0.8;
+}
+
+.hero button{
+margin-top:25px;
+padding:12px 35px;
+background:orange;
+border:none;
+font-size:18px;
+border-radius:30px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.hero button:hover{
+background:white;
+color:black;
+}
+
+/* CONTAINER */
+.container{
+width:90%;
+margin:auto;
+padding:50px 0;
+}
+
+/* HEADINGS */
+h2{
+border-left:6px solid orange;
+padding-left:10px;
+margin-bottom:20px;
+}
+
+/* CARDS */
+.cards{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+}
+
+.card{
+background:#1c1c1c;
+padding:20px;
+width:260px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 0 15px rgba(255,165,0,0.2);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-12px) scale(1.03);
+}
+
+/* GALLERY */
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+transition:0.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.1);
+}
+
+/* TABLE */
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+padding:12px;
+border:1px solid #444;
+text-align:center;
+}
+
+th{
+background:orange;
+color:black;
+}
+
+/* PRICE */
+.price{
+background:#1c1c1c;
+padding:30px;
+text-align:center;
+border-radius:12px;
+box-shadow:0 0 15px rgba(255,165,0,0.2);
+}
+
+.price h3{
+font-size:38px;
+color:orange;
+}
+
+.buybtn{
+margin-top:15px;
+padding:12px 30px;
+background:orange;
+border:none;
+border-radius:25px;
+cursor:pointer;
+}
+
+/* REVIEW */
+.review{
+background:#1c1c1c;
+padding:20px;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+/* FORM */
+form{
+background:#1c1c1c;
+padding:25px;
+border-radius:10px;
+}
+
+input,textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+border:none;
+border-radius:5px;
+}
+
+.submitbtn{
+background:orange;
+padding:10px;
+border:none;
+cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+background:#111;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#about">About</a>
+<a href="#materials">Materials</a>
+<a href="#features">Features</a>
+<a href="#gallery">Gallery</a>
+<a href="#specs">Specs</a>
+<a href="#speciality">Speciality</a>
+<a href="#price">Price</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+<div>
+<h1>Hunter 350</h1>
+<p>The Urban Rebel Roadster</p>
+<button>Book Test Ride</button>
+</div>
+</div>
+
+<div class="container">
+
+<section id="about">
+<h2>About</h2>
+<p>
+Hunter 350 is a stylish urban bike powered by a 349cc engine.
+It offers smooth ride quality, strong road presence and modern features.
+</p>
+</section>
+
+<section id="materials">
+<h2>Materials Used</h2>
+<div class="cards">
+<div class="card">Steel Frame</div>
+<div class="card">Aluminium Engine Parts</div>
+<div class="card">Alloy Wheels</div>
+<div class="card">Fiber Panels</div>
+<div class="card">Rubber Tires</div>
+<div class="card">Chrome Finish</div>
+</div>
+</section>
+
+<section id="features">
+<h2>Key Features</h2>
+<div class="cards">
+<div class="card">349cc Engine</div>
+<div class="card">ABS Braking</div>
+<div class="card">LED Lights</div>
+<div class="card">Navigation</div>
+<div class="card">Alloy Wheels</div>
+<div class="card">Comfort Seat</div>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/124233/hunter-350-right-front-three-quarter.jpeg">
+<img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/124233/hunter-350-left-side-view.jpeg">
+<img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/124233/hunter-350-front-view.jpeg">
+<img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/124233/hunter-350-rear-view.jpeg">
+</div>
+</section>
+
+<section id="specs">
+<h2>Detailed Specifications</h2>
+<table>
+<tr><th>Category</th><th>Details</th></tr>
+<tr><td>Engine</td><td>349cc, Air-Oil Cooled</td></tr>
+<tr><td>Power</td><td>20.2 bhp</td></tr>
+<tr><td>Torque</td><td>27 Nm</td></tr>
+<tr><td>Gearbox</td><td>5-Speed</td></tr>
+<tr><td>Mileage</td><td>36 km/l</td></tr>
+<tr><td>Fuel Tank</td><td>13 Litres</td></tr>
+<tr><td>Weight</td><td>181 kg</td></tr>
+</table>
+</section>
+
+<section id="speciality">
+<h2>Speciality</h2>
+<div class="cards">
+<div class="card">Best for City Riding</div>
+<div class="card">Lightweight Handling</div>
+<div class="card">Retro Modern Design</div>
+<div class="card">Smooth Performance</div>
+<div class="card">Affordable RE Bike</div>
+<div class="card">Comfort Ride</div>
+</div>
+</section>
+
+<section id="price">
+<h2>Price</h2>
+<div class="price">
+<h3>₹1.5 - 1.7 Lakh</h3>
+<button class="buybtn">Buy Now</button>
+</div>
+</section>
+
+<section id="reviews">
+<h2>User Reviews</h2>
+<div class="review">⭐ Best bike for city rides!</div>
+<div class="review">⭐ Smooth engine and stylish look.</div>
+<div class="review">⭐ Affordable and powerful.</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<form>
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea placeholder="Message"></textarea>
+<button class="submitbtn">Submit</button>
+</form>
+</section>
+
+</div>
+
+<footer>
+<p>© 2026 Hunter 350 Project | Designed by You 😎</p>
+</footer>
+
+</body>
+</html>
